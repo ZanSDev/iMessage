@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">iMessages</string>
+    <string name="deskrip">Enter your phone number to receive a verification code to use iMessages</string>
+    <string name="deskriptnc">kami. Ketuk " Setuju dan</string>
+    <string name="deskriptnc1">lanjutkan" untuk menerima</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

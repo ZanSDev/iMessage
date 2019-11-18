@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B1AFAF</color>
+    <color name="colorPrimaryDark">#969596</color>
+    <color name="colorAccent">#B1AFAF</color>
+
+    //textsplah
+    <color name="textsplash">#969596</color>
+</resources>

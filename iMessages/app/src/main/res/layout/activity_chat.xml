@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".chatactivity.ChatActivity">
+
+    <include
+        android:id="@+id/chat_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/private_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chat_toolbar"
+        android:layout_above="@+id/chat_linear_layout">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/chat_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/send_file_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/input_message"
+            android:layout_alignBottom="@+id/input_message"
+            android:src="@drawable/ic_note_add"/>
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:layout_toEndOf="@id/send_file_btn"
+            android:hint="type message here..." />
+
+        <ImageButton
+            android:id="@+id/send_message_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"
+            android:layout_alignTop="@+id/input_message"
+            android:layout_alignBottom="@+id/input_message"
+            android:layout_alignRight="@+id/input_message"
+            android:padding="5dp"
+            android:src="@drawable/ic_send_black"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

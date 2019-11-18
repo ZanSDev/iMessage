@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".chatactivity.ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/visit_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/visit_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/visit_profile_image"
+        app:layout_constraintStart_toStartOf="@+id/visit_profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/visit_profile_image"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/visit_profile_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is my status"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/visit_profile_name"
+        app:layout_constraintStart_toStartOf="@+id/visit_profile_name"
+        app:layout_constraintTop_toBottomOf="@+id/visit_profile_name"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/send_message"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Send Message"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <Button
+        android:id="@+id/decline_send_message"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Cancel Chat Request"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
